@@ -1,4 +1,4 @@
-# ☕🚲 Bike Café Gourmet
+# ☕🚲 Bike Café Gourmet — UX/UI Case
 
 Uma solução digital para conectar usuários a cafeterias móveis de forma simples, rápida e intuitiva.
 
