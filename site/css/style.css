@@ -1,0 +1,221 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* ==== FONTES ==== */
+
+@font-face {
+    font-family: "Kenyan Coffee";
+    src: url("../assets/fonts/KenyanCoffee-regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Kenyan Coffee";
+    src: url("../assets/fonts/KenyanCoffee-bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Kenyan Coffee";
+    src: url("../assets/fonts/KenyanCoffee-regular-it.ttf");
+    font-style: italic;
+}
+
+/* ==== VARIÁVEIS ==== */
+
+:root {
+    --brown-dark: #2b1207;
+    --brown-medium: #8d5f5f;
+    --brown-light: #b08c78;
+    --cream: #faedd7;
+    --white: #ffffff;
+    --font-title: "Kenyan Coffee", sans-serif;
+    --font-body: "Montserrat", sans-serif;
+}
+
+/* ==== CORPO ==== */
+
+body{
+    min-height:100vh;
+    background-color: #f7f7f7;
+    font-family:var(--font-body)
+}
+
+/* ==== MEU LATERAL ==== */
+
+.sidebar{
+    position:fixed;
+    left:30px;
+    top:0;
+
+    width:260px;
+    height:100vh;
+    background:var(--cream);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+
+    z-index:100;
+}
+
+.logo{
+    text-align: center;
+    padding-top:15px;
+}
+
+.logo img{
+    width:100%;
+    max-width: 300px;
+}
+
+/* ==== MENU ==== */
+
+.menu{
+    padding-left:35px;
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+}
+
+.menu a{
+    text-decoration:none;
+    color: var(--brown-dark);
+    font-family: var(--font-body);
+    font-size:3rem;
+    transition:.3s;
+}
+
+.menu a:hover{
+    color:var(--brown-medium);
+}
+
+/* ==== RODAPÉ MENU LATERAL ==== */
+
+.sidebar-footer{
+    padding:30px;
+}
+
+.social-icons{
+    display:flex;
+    gap:15px;
+    margin-bottom:10px;
+}
+
+.social-icons img{
+    width:40px;
+    height:40px;
+}
+
+.sidebar-footer p{
+    font-size:1.8rem;
+    color: var(--brown-dark);
+}
+
+/* ==== CONTEÚDO ==== */
+
+.content{
+    width: 100%;
+}
+
+/* ==== TOPBAR ==== */
+
+.topbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:60px;
+    background:var(--brown-dark);
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+
+    padding-right:80px;
+
+    z-index:5;
+}
+
+.location-link{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:var(--white);
+    text-decoration:none;
+    font-size:1rem;
+    font-family:var(--font-body);
+}
+
+.location-link img{
+    width:16px;
+    height:16px;
+    display:block;
+    filter:brightness(0) invert(1);
+}
+
+.hero-nav{
+    height:220px;
+    background-color: #f7f7f7;
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap:50px;
+    padding-right:80px;
+    padding-bottom:40px;
+}
+
+.hero-nav a{
+    text-decoration:none;
+    color:var(--brown-medium);
+    font-size:2.2rem;
+    font-family: var(--font-body);
+}
+
+.btn-cadastro{
+    display:flex;
+    align-items: center;
+    height:60px;
+    background-color: #8d5f5f;
+    color:#f7f7f7 !important;
+    padding:0px 30px;
+    border-radius:40px;
+}
+
+.hero{
+    height:calc(100vh - 278px);
+    background-image:url("../assets/hero-cafe.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    right: 70px;
+    bottom: 90px;
+    text-align:right;
+    color:var(--cream);
+}
+
+.overlay h2{
+    font-family:var(--font-title);
+    font-size:4rem;
+}
+
+.overlay h1{
+    font-family:var(--font-title);
+    font-size:6rem;
+}
+
+.sobre{
+    padding:80px;
+}
+
+.sobre-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:100px;
+}
