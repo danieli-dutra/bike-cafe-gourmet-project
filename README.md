@@ -6,6 +6,18 @@ Projeto desenvolvido para explorar a integração entre **UX/UI Design** e **Des
 
 ## 👀 Preview do Projeto
 
+<p align="flex-end">
+  <img
+    src="./assets/animacao-bcg-app.gif"
+    alt="App Bike Café Gourmet"
+    width="250">
+
+  <img
+    src="./assets/home-site-bcg.png"
+    alt="Website Bike Café Gourmet"
+    width="550">
+</p>
+
 ---
 
 ## 📌 Sobre o Projeto
@@ -215,6 +227,6 @@ Além de consolidar conhecimentos em HTML, CSS e JavaScript durante a transiçã
 
 Estudante de Análise e Desenvolvimento de Sistemas, formada em Artes Digitais e em transição para a área de tecnologia, com foco em Desenvolvimento Full Stack, UX/UI e produtos digitais.
 
-📌 LinkedIn: [www.linkedin.com/in/danidutra-dev](http://www.linkedin.com/in/danidutra-dev)
+📌 LinkedIn: [www.linkedin.com/in/danieli-dutra](http://www.linkedin.com/in/danieli-dutra)
 
-📌 GitHub: https://github.com/DaniDutra-dev
+📌 GitHub: https://github.com/danieli-dutra
