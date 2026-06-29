@@ -1,10 +1,26 @@
+/* ======================================================
+RESET
+====================================================== */
+
 *{
     margin:0;
     padding:0;
-    box-sizing: border-box;
+    box-sizing:border-box;
 }
 
-/* ==== FONTES ==== */
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    min-height:100vh;
+}
+
+/* ======================================================
+TIPOGRAFIA
+====================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 @font-face {
     font-family: "Kenyan Coffee";
@@ -24,7 +40,9 @@
     font-style: italic;
 }
 
-/* ==== VARIÁVEIS ==== */
+/* ======================================================
+VARIÁVEIS
+====================================================== */
 
 :root {
     --brown-dark: #2b1207;
@@ -32,87 +50,86 @@
     --brown-light: #b08c78;
     --cream: #faedd7;
     --white: #ffffff;
+
+    --sidebar-width: 260px;
+    --sidebar-offset: 30px;
+
+    --top-bar-height: 60px;
+
     --font-title: "Kenyan Coffee", sans-serif;
     --font-body: "Montserrat", sans-serif;
 }
 
-/* ==== CORPO ==== */
+/* ======================================================
+CORPO
+====================================================== */
 
 body{
-    min-height:100vh;
-    background-color: #f7f7f7;
-    font-family:var(--font-body)
+    font-family: var(--font-body);
+    background:#f7f7f7;
+    color: var(--brown-dark);
 }
 
-/* ==== MEU LATERAL ==== */
+/* ======================================================
+MENU LATERAL
+====================================================== */
 
 .sidebar{
     position:fixed;
-    left:30px;
     top:0;
+    left: var(--sidebar-offset);
+    width: var(--sidebar-width);
 
-    width:260px;
     height:100vh;
     background:var(--cream);
+
+    z-index:100;
 
     display:flex;
     flex-direction:column;
     justify-content:space-between;
-
-    z-index:100;
 }
 
 .logo{
-    text-align: center;
-    padding-top:15px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .logo img{
-    width:100%;
-    max-width: 300px;
+    width:88%;
+    display: block;
 }
-
-/* ==== MENU ==== */
-
-.menu{
-    padding-left:35px;
-    display:flex;
-    flex-direction:column;
-    gap:14px;
-}
-
-.menu a{
-    text-decoration:none;
-    color: var(--brown-dark);
-    font-family: var(--font-body);
-    font-size:3rem;
-    transition:.3s;
-}
-
-.menu a:hover{
-    color:var(--brown-medium);
-}
-
 /* ==== RODAPÉ MENU LATERAL ==== */
 
 .sidebar-footer{
-    padding:30px;
+    padding:32px;
 }
 
 .social-icons{
     display:flex;
-    gap:15px;
-    margin-bottom:10px;
+    gap: 16px;
+    margin-bottom: 12px;
 }
 
-.social-icons img{
-    width:40px;
-    height:40px;
+.social-icons a{
+    color: var(--brown-dark);
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons i{
+    font-size: 2rem;
 }
 
 .sidebar-footer p{
-    font-size:1.8rem;
+    font-family: var(--font-body);
+    font-size: 1.45rem;
     color: var(--brown-dark);
+    white-space: nowrap;
 }
 
 /* ==== CONTEÚDO ==== */
@@ -124,19 +141,20 @@ body{
 /* ==== TOPBAR ==== */
 
 .topbar{
-    position:fixed;
-    top:0;
-    left:0;
+    position: fixed;
+    top: 0;
+    left: 0;
     width:100%;
-    height:60px;
+    height:var(--top-bar-height);
     background:var(--brown-dark);
-    display:flex;
-    justify-content:flex-end;
-    align-items:center;
 
-    padding-right:80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 
-    z-index:5;
+    padding-right: 100px;
+
+    z-index: 10;
 }
 
 .location-link{
@@ -145,43 +163,71 @@ body{
     gap:8px;
     color:var(--white);
     text-decoration:none;
-    font-size:1rem;
-    font-family:var(--font-body);
 }
 
 .location-link img{
-    width:16px;
-    height:16px;
-    display:block;
+    width:18px;
+    height:18px;
+    object-fit: contain;
     filter:brightness(0) invert(1);
 }
 
+/* ======================================================
+HERO NAVIGATION
+====================================================== */
 .hero-nav{
     height:220px;
-    background-color: #f7f7f7;
-    display:flex;
+    background-color: var(--white);
+
+    display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    gap:50px;
-    padding-right:80px;
-    padding-bottom:40px;
+
+    padding-right: 90px;
+    padding-bottom: 38px;
 }
 
 .hero-nav a{
-    text-decoration:none;
-    color:var(--brown-medium);
-    font-size:2.2rem;
+    text-decoration: none;
+    color: var(--brown-medium);
+
     font-family: var(--font-body);
+    font-size: 2rem;
+    font-weight: 500;
+
+    transition: .25s;
+}
+
+.hero-nav a:hover{
+    color: var(--brown-dark);
+}
+
+.hero-nav a + a{
+    margin-left: 52px;
 }
 
 .btn-cadastro{
     display:flex;
     align-items: center;
-    height:60px;
-    background-color: #8d5f5f;
-    color:#f7f7f7 !important;
-    padding:0px 30px;
-    border-radius:40px;
+    justify-content: center;
+
+    min-width: 175px;
+    height: 58px;
+    margin-left: 72px;
+
+    background-color: var(--brown-medium);
+    color:var(--white) !important;
+
+    border-radius: 999px;
+    font-weight: 500;
+    transition: .25s;
+
+    position: relative;
+    top: 4px;
+}
+
+.btn-cadastro:hover{
+    background: var(--brown-dark);
 }
 
 .hero{
