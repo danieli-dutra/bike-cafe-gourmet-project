@@ -1,0 +1,48 @@
+.sobre{
+    padding-top:120px;
+    padding-left:540px;
+    padding-right:90px;
+    padding-bottom:60px;
+}
+
+.sobre h1{
+    font-size:4.5rem;
+    font-weight:700;
+    margin-bottom:40px;
+}
+
+.sobre-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:120px;
+}
+
+.sobre article{
+    display:flex;
+    flex-direction:column;
+}
+
+.sobre h2{
+    font-size:3rem;
+    font-weight:500;
+    margin-bottom:18px;
+}
+
+.sobre p{
+    font-size:1.4rem;
+    line-height:1.7;
+    margin-bottom:55px;
+    max-width:420px;
+}
+
+.sobre ul{
+    list-style:none;
+    font-size:1.4rem;
+    line-height:1.8;
+}
+
+.sobre img{
+    width:420px;
+    margin-top:70px;
+    align-self:flex-end;
+}

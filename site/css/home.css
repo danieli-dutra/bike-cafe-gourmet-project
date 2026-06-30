@@ -1,0 +1,64 @@
+/* === HERO === */
+
+.hero{
+    height:calc(100vh - 278px);
+    background-image:url("../assets/hero-cafe.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* === HERO NAVIGATION === */
+
+.hero-nav{
+    height:220px;
+    background-color: var(--white);
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 52px;
+
+    padding-right: 90px;
+    padding-bottom: 38px;
+}
+
+.hero-nav a{
+    color: var(--brown-medium);
+
+    font-family: var(--font-body);
+    font-size: 2rem;
+    font-weight: 500;
+
+    transition: .25s;
+}
+
+.hero-nav a:hover{
+    color: var(--brown-dark);
+}
+
+.hero-nav a.active{
+    color: var(--brown-dark);
+}
+
+/* === HERO TEXT === */
+
+.overlay{
+    position: absolute;
+    right: 70px;
+    bottom: 90px;
+    text-align:right;
+    color:var(--cream);
+}
+
+.overlay h2{
+    font-family:var(--font-title);
+    font-size:4rem;
+    font-weight: 400;
+}
+
+.overlay h1{
+    font-family:var(--font-title);
+    font-size:6rem;
+    font-weight: 700;
+}

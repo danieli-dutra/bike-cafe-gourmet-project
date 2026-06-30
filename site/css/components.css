@@ -1,0 +1,42 @@
+/* === LOCALIZAÇÃO === */
+
+.location-link{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:var(--white);
+}
+
+.location-link img{
+    width:18px;
+    height:18px;
+    object-fit: contain;
+    filter:brightness(0) invert(1);
+}
+
+/* === BOTÕES === */
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 175px;
+    height: 58px;
+
+    border-radius: 999px;
+    transition: .25s;
+    font-family: var(--font-body);
+    font-weight: 500;
+}
+
+.btn-primary{
+    margin-left: 20px;
+
+    background-color: var(--brown-medium);
+    color:var(--white);
+}
+
+.btn-primary:hover{
+    background: var(--brown-dark);
+}

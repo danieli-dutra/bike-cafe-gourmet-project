@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: "Kenyan Coffee";
+    src: url("../assets/fonts/KenyanCoffee-regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Kenyan Coffee";
+    src: url("../assets/fonts/KenyanCoffee-bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Kenyan Coffee";
+    src: url("../assets/fonts/KenyanCoffee-regular-it.ttf");
+    font-style: italic;
+}
+
+:root {
+
+/* Cores */
+
+    --brown-dark: #2b1207;
+    --brown-medium: #8d5f5f;
+    --brown-light: #b08c78;
+    --cream: #faedd7;
+    --white: #ffffff;
+
+/* Layout */
+
+    --sidebar-width: 260px;
+    --sidebar-offset: 30px;
+
+    --top-bar-height: 60px;
+    --content-padding: 80px;
+
+/* Fontes */    
+    --font-title: "Kenyan Coffee", sans-serif;
+    --font-body: "Montserrat", sans-serif;
+}
